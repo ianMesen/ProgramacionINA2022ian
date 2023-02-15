@@ -1,0 +1,32 @@
+
+Ejercico secuencial
+
+1.Hacer un programa que ingrese por teclado un número total de segundos
+ y que luego pueda mostrar la cantidad de horas, minutos y
+ segundos que existen en el valor ingresado
+
+2.A un trabajador le pagan según sus horas trabajadas por una tarifa de 
+pago por hora. si la cantidad de horas trabajadas es mayor a 40 horas. 
+la tarifa se incrementa en un 50% para las horas extras. calcular el 
+salario del trabajador dadas las horas trabajadas y la tarifa.
+
+3.Crear un algoritmo que comprar un par de zapatillas por internet.
+
+1. Buscar página confiable
+2. Ingresar a la pagina
+3. Ver modelos disponibles
+4. Escoger el modelo que nos guste
+5. Consultar nuestra talla
+6. Elegir forma de pago
+7. Seleccionar forma de envió
+8. Confirmar dirección de envió
+9. Observar si la compra fue exitosa
+
+4.Determinar cuantas monedas de 1000, 500, 100, 50, 25, 10, 5 hay en n alcancias.El total de
+monedas de todas las alcancias y el total de dinero recaudado.
+
+5. Escribir un programa para una empresa que tiene salas de juegos para todas las edades y 
+quiere calcular de forma automática el precio que debe cobrar a sus clientes por entrar. 
+El programa debe preguntar al usuario la edad del cliente y mostrar el precio de la entrada. 
+Si el cliente es menor de 4 años puede entrar gratis, si tiene entre 4 y 18 años debe pagar 
+5€ y si es mayor de 18 años, 10€.
