@@ -1,0 +1,30 @@
+/*regla selector y cuerpo*/
+/*propiedades y sus valores*/
+/*selector: indica a quien se le va a plicar la regla o formato*/
+/*tipo selectores: universal,etiqueta,clase,id, ordenador por especificidad*/
+
+/*universal*/
+*{
+    color:rgb(119, 156, 144) ;
+
+}
+
+
+/*etiqueta*/
+table{
+    color:rgb(214, 226, 44) ;
+    background-color: rgb(14, 52, 134);
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style: dotted;
+}
+
+/*clase*/
+.table1{
+    background-color: rgb(49, 145, 46);
+}
+/*id*/
+#apellido{
+    
+    background-color: rgb(192, 13, 162);
+}
