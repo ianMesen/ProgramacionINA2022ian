@@ -1,0 +1,22 @@
+*{
+    background-color: rgb(145, 194, 135);
+
+}
+#informacionpersonal{
+    background-color: rgb(148, 214, 189);
+}
+#bordesinformacionpersonal{
+    background-color: rgb(0, 0, 0);
+}
+#informacionAcademica{
+    background-color: rgb(157, 207, 211);
+}
+#bordesinformacionAcademica{
+    background-color: rgb(0, 0, 0);
+}
+#referencias{
+    color: blueviolet;
+}
+#contacto{
+    font-family: Arial, Helvetica, sans-serif;
+}
