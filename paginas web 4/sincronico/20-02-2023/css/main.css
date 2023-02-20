@@ -1,0 +1,50 @@
+*{
+    margin-left: 7px;
+    background-color: black;
+    color: white;
+}
+.margen1{
+    position: absolute;
+    top: 80px;
+}
+
+.texto11{
+    display: inline;
+   border-image: 10%;
+}
+
+.borderImg{
+    border-radius: 15px ;
+}
+.borderImg2{
+    border-radius: 100%;
+}
+.inicio1{
+    position: fixed;
+}
+.publicidad{
+    position: absolute;
+    left: 1620px;
+}
+.marco1{
+    position: relative;
+    left: 1620px;
+    top: 300px;
+    
+}
+.textoposi{
+    position: relative;
+    left: 120px;
+    top: -150px;
+}
+.textoposi2{
+    position: absolute;
+    top: 300px;
+}
+.sinDecorasion{
+    text-decoration: none;
+    
+}
+.textocolor{
+    color: rgb(15, 67, 145);
+}
