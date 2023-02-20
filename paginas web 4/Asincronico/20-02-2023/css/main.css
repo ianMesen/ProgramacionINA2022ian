@@ -1,0 +1,59 @@
+
+
+.color1{
+    color: rgb(17, 129, 151);
+    position: absolute ;
+    left: 50px;
+}
+.color2{
+    color: rgb(17, 129, 151);
+}
+.div{
+    position: absolute ;
+    left: 50px;
+    top: 120px;
+}
+.div2{
+    position: absolute ;
+    left: 30px;
+    top: 360px;
+}
+.div3{
+    margin-top: 10px;
+}
+.div4{
+    position: absolute ;
+    left: 30px;
+    top: 515px;
+}
+.div5{
+    position: absolute ;
+    left: 350px;
+    top: 140px;
+}
+.div6{
+    position: absolute ;
+    left: 350px;
+    top: 340px;
+}
+.div7{
+    position: absolute ;
+    left: 350px;
+    top: 540px;
+}
+.div8{
+    position: absolute ;
+    left: 30px;
+    top: 685px;
+}
+.fondo1{
+    background-color: rgb(212, 194, 132);
+    margin-right: 790px;
+    right: 20%;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+.fondo2{
+    background-color: aqua;
+}
