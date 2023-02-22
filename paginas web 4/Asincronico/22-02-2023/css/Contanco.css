@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(37, 164, 214);
+}
+.fondoCentro{
+    background-color: rgb(255, 255, 255);
+    color: #777777;
+    width: 4px;
+    height: 150px;
+    padding: 9%;
+    border-radius: 1%;
+    margin:0% auto;
+    box-shadow: 2px 2px 20px 2px #000000; 
+}
+.texto{
+    position: absolute;
+    left: 42%;
+    top: 4%;
+    color: #777777;
+}
+.linea{
+    position: absolute;
+    left: 42%;
+    top: 6%;
+    color: #000000;
+}
+input {
+    background-color: white;
+    color: #5f5d5d;
+    border:none;
+    border-bottom:1px solid #777777;
+}
+.texto2{
+    position: absolute;
+    left: 42%;
+    top: 10%;
+}
+.texto3{
+    position: absolute;
+    left: 42%;
+    top: 20%;
+}
+.texto4{
+    position: absolute;
+    left: 42%;
+    top: 30%;
+}
+.send{
+    position: absolute;
+    left: 1000px;
+    top: 450px;
+    border-radius: 100%;
+}
+.fondoContac{
+    background-color: #636262;
+    color: white;
+    width: 15%;
+    height: 3%;
+    position: absolute;
+    left: 45%;
+    text-align: center;
+    top: 47%;
+    border-radius: 3px;
+}

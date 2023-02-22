@@ -1,0 +1,9 @@
+
+.input{
+    display: inline-flex;
+    margin: 5px;
+}
+.input label{
+    width: 80px;
+    
+}
