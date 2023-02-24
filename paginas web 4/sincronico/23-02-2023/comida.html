@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+    <div class="container" id="arriba"  >
+        <div class="row" > 
+            <div class="col-lg-4" ><h7>View theme info</h7> </div>
+          
+            <div class="col-lg-4" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+                </svg><svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+            </div>
+            
+            <div class="col-lg-4" >
+                <div id="heredar">
+                    <div class="input" >
+                                    
+                        <select name="lugares" id="lugares">
+                            <option value="1">Standard license </option>
+                            <option value="1">Standard license $49.00</option>
+                            <option value="2">Multisite license $149.00</option>
+                            <option value="3">Extended license $499.00</option>
+                        </select>
+                    </div>
+                    
+                
+                    <div><button type="button" class="btn" id="botonArriba">Anadir al carrito $49.00</button></div>
+
+                    <svg id="izquierda" xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+                </div>
+            </div>
+         
+        </div>
+        <div class="linea">
+            <hr style="width: 100%;" style="height: 100px;" >
+        </div>
+
+        <!--segunda Fila-->
+        <div class="row" >
+
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6"><img src="foto/logo-dark.png" alt="logo" width="140"> 
+                
+                 <button type="button" class="btn"><div>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg></div>
+                    <div class="input"> 
+                        <select name="destinos" id="destinos">
+                            <option value="1">New York</option>
+                            <option value="2">Los Angeles</option>
+                            <option value="3">Chicago</option>
+                            <option value="4">Houston</option>
+                            <option value="5">philadelphina</option>
+                            <option value="6">San diego</option>
+                            <option value="7">Miami </option>
+                        </select>
+                    </div>
+                    </div></button>
+                    <button type="button" class="btn ">Cuisine</button>
+                    <button type="button" class="btn ">Back to main demo</button>
+
+                    
+                    
+                    <div class="col-lg-4" id="derecha"><svg xmlns="http://www.w3.org/2000/svg" width="120" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="40" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                      </svg></div>
+                      <div class="col-lg-1">  </div>
+            </div>
+        </div>
+        <!--tercera fila -->
+        <div class="row" style="background-image: url(foto/fondo1.jpg);" id="ordenFondo">
+            <div class="col-lg-4"> </div>
+            <div class="col-lg-4" >
+                <div > #1 Food Delivery Service since 2010</div>
+                <div ><h4>We Delivery you favorite food fresh and fast in 
+                  
+                            
+                        <select name="destinos" id="newYork">
+                            <option value="49">New York</option>
+                            <option value="149">Los Angeles</option>
+                            <option value="499">Chicago</option>
+                            <option value="499">Houston</option>
+                            <option value="499">philadelphina</option>
+                            <option value="499">San diego</option>
+                            <option value="499">Miami </option>
+                        </select>
+                    </h4>
+                  
+                </div>
+                
+                <button type="button" class="btn" id="botonCentro">What do you want to eat?</button>
+                
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+        
+        <!--cuerta Fila-->
+        <div class="row">
+            <div class="col-lg12">
+
+                <div id="textoCentrado1">
+                    <h1>Trending food in your city</h1>
+                </div>
+
+            </div>
+
+        </div>
+          <!--quinta Fila-->
+        <div class="row">
+            <div class="col-lg12">
+
+                <div id="textoCentrado2">
+                    <h4>Choose what you want and we dilever it to you</h4>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+          <!--sexta Fila-->
+          <div class="row" >
+
+            <div class="col-lg-4">
+
+                <div id="11">
+                    <div class="card" style="width: 18rem;" >
+                        <img src="foto/01.jpg" class="card-img-top" alt="1" > 
+                        <div class="card-body" style="text-align: center;">
+                          <p class="card-text"><h3>Burgers & Fries</h3></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4">
+
+                <div id="11">
+                    <div class="card" style="width: 18rem;">
+                        <img src="foto/02.jpg" class="card-img-top" alt="1">
+                        <div class="card-body" style="text-align: center;">
+                          <p class="card-text"><h3>Noodles</h3></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4">
+
+                <div id="11">
+                    <div class="card" style="width: 18rem;" >
+                        <img src="foto/03.jpg" class="card-img-top" alt="1">
+                        <div class="card-body" style="text-align: center;">
+                          <p class="card-text"><h3>sushi & rolls</h3></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--7-->
+        <div class="row">
+            <div class="col-lg-4">
+
+                <div id="textoCentrado3">
+                    <div class="card" style="width: 18rem;" >
+                        <img src="foto/04.jpg" class="card-img-top" alt="1">
+                        <div class="card-body" style="text-align: center;">
+                          <p class="card-text"><h3>Pizza & Pasta</h3></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4">
+
+                <div id="1">
+                    <div class="card" style="width: 18rem;" >
+                        <img src="foto/05.jpg" class="card-img-top" alt="1">
+                        <div class="card-body" style="text-align: center;">
+                          <p class="card-text"><h3>Coffee & desert</h3></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4">
+
+                <div id="11">
+                    <div class="card" style="width: 18rem;" >
+                        <img src="foto/06.jpg" class="card-img-top" alt="1" >
+                        <div class="card-body" style="text-align: center;" >
+                          <p class="card-text"><h3>Healty & Food</h3></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--8-->
+        <div class="row" style="background-image: url(foto/mobile-app-bg.jpg);" id="ordenfondo2">
+            <div class="col-lg-3" > </div>
+            <div class="col-lg-3" style="text-align: center;" style="margin:0px auto;">
+                <div style="margin-top: 40%;">
+                    <h2>Order food on the go with Cartzilla App</h2>
+                    <h6>Pay with in app wallet, collect loyalty points, track your orders in real time and much more.</h6>
+                    <button type="button" class="btn" id="boton2">Download on the</br>
+                        App Store</button>
+                    
+                    <button type="button" class="btn" id="boton2">Download on the</br>
+                        Google Store</button>
+                </div>
+            </div>
+      
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+              <div id="imagen"><img src="foto/phone.png" alt="phone" height="20%" width="65%"></div>
+            </div>
+        </div>
+        <!--9-->
+        
+        <div class="row" id="heredar">
+            <!-- <div class="col-lg-2"></div> -->
+            <div class="col-lg-6"  id="fondobloques"  >
+
+                <div >
+                    <div class="imagen1">
+                        <h2 style="color: black;">Become a Courier</h2>
+                        Earn competitive salary as delivery </br>courier working flexible schedule.</br>
+                        <button type="button" class="btn" id="boton2">Start earning</button>
+                    </div>
+                    <div class="imagen1">
+                        <img src="foto/courier.png" alt="person" height="100%" width="100%">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6" id="fondobloques2" style="max-height: 320px;" >
+                <div style="margin:90px auto;" >
+                    <h2 style="color: black;">Become a Partner </h2>
+                        Grow your business by reaching new</br> customers.</br>
+                    
+                    <button type="button" class="btn" id="boton2">Partner whit us</button>
+                </div >
+                <img src="foto/chef.png" alt="chef" height="100%" >
+            </div>
+            <!-- <div class="col-lg-2"></div> -->
+        </div>
+    
+
+    
+
+
+    <!--Div final conteiner-->
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html> 

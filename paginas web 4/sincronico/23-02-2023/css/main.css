@@ -1,0 +1,103 @@
+body{
+    text-decoration: none;
+    color: gray;  
+    display: inline;
+}
+#botonCentro{
+    background-color: orangered;
+    margin:0% auto;
+}
+#ordenFondo{
+    color: white;
+    padding: 13%;
+    background-size: 100%;
+}
+#linea1{
+    display: inline;
+}
+#arriba{
+    display: inline;
+    width: 100%;
+}
+#centrarTexto{
+    margin:0% auto;
+}
+#fondo{
+    background-color: aqua;
+}
+#linea2{
+    display: inline;
+    
+}
+#botonArriba{
+    background-color: blueviolet;
+    margin-right: auto;
+    color: white;
+    float: inherit;
+    float: right;
+}
+#derecha{
+    display: inline;
+    width: 100%;
+    
+}
+#heredar{
+    float: inherit;
+}
+#textoCentrado1{
+    text-align: center;
+    color: black;
+}
+#textoCentrado2{
+    text-align: center;
+}
+#textoCentrado3{
+    text-align: center;
+    color: gray;
+    margin:0% auto;
+}
+#centrado2{
+    margin:0% auto;
+    display: inline;
+    width: 100%;
+}
+#newYork{
+    color: red;
+    border-bottom: none;
+}
+#ordenfondo2{
+    background-size: 100%;
+    color: white;
+    margin-top: 10%;
+    padding: 30px;
+    height: 543px;
+    
+}
+#imagen{
+  
+}
+#boton2{
+    background-color: rgb(203, 74, 74);
+    color: white;
+}
+#fondobloques{
+    background-color: rgb(93, 188, 188);
+    border-radius: 2%;
+   
+
+}
+#fondobloques2{
+    background-color:  rgb(205, 208, 177);
+    border-radius: 2%;
+
+
+}
+#fotochef{
+    float: inline-end;
+    float: right;
+}
+
+.imagen1{
+    display: inline-block;
+    width: 40%;
+}

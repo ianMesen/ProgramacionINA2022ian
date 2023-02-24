@@ -1,0 +1,39 @@
+
+body{
+    text-decoration: none;
+    color: gray;  
+    display: inline;
+}
+#botonCentro{
+    background-color: orangered;
+    margin:0% auto;
+}
+#ordenFondo{
+    color: white;
+    padding: 12%;
+    background-size: 100%;
+}
+#linea1{
+    display: inline;
+}
+#arriba{
+    display: inline;
+    width: 100%;
+}
+#centrarTexto{
+    margin:0% auto;
+}
+#fondo{
+    background-color: aqua;
+}
+#linea2{
+   
+    display: inline;
+    
+}
+
+#izquierda{
+    
+    float: left;
+    background-color: aqua;
+}
