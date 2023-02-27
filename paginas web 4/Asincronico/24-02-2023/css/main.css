@@ -1,0 +1,188 @@
+body{
+    text-decoration: none;
+    color: gray;  
+    display: inline;
+}
+#botonCentro{
+    background-color: orangered;
+    margin:0% auto;
+    color: white;
+}
+#ordenFondo{
+    color: white;
+    padding: 11%;
+    background-size: 100%;
+}
+#linea1{
+    
+    color: blueviolet;
+}
+#arriba{
+    display: inline;
+    width: 100%;
+}
+#centrarTexto{
+    margin:0% auto;
+}
+#fondo{
+    background-color: aqua;
+}
+#linea2{
+    display: inline;
+    
+}
+#botonArriba{
+    background-color: blueviolet;
+    display: inline-block;
+    margin-right: auto;
+    color: white;
+ 
+}
+
+#heredar{
+    float: inherit;
+}
+#textoCentrado1{
+    text-align: center;
+    color: gray;
+    margin-top: 5%;
+}
+#textoCentrado2{
+    text-align: center;
+    
+}
+#textoCentrado3{
+    text-align: center;
+    color: gray;
+    margin:0% auto;
+}
+#centrado2{
+    margin:0% auto;
+    display: inline;
+    width: 100%;
+}
+#newYork {
+    color: red;
+    border: 0px !important;
+
+}
+#ordenfondo2{
+    background-size: 100%;
+    color: white;
+    margin-top: 10%;
+    padding: 30px;
+    height: 541px;
+    
+}
+#imagen{
+  
+}
+#boton2{
+    background-color: rgb(203, 74, 74);
+    color: white;
+}
+#fondobloques{
+    background-color: rgb(93, 188, 188);
+    border-radius: 2%;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 19%;
+    box-shadow: 2px 2px 20px 2px #6b6b6b; 
+}
+#fondobloques2{
+    background-color:  rgb(205, 208, 177);
+    border-radius: 2%;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 2%;
+    box-shadow: 2px 2px 20px 2px #6b6b6b; 
+}
+#fotochef{
+    float: inline-end;
+    float: right;
+}
+
+.imagen1{
+    display: inline-block;
+    width: 40%;
+    margin-left: 7%;
+}
+.imagen111{
+    display: inline-block;
+    width: 40%;
+    margin:0px auto;
+    margin-left: 7%;
+}
+#div1{
+   display: inline-block;
+   margin-right: 7%;
+   margin-left: 16%;
+}
+.div2{
+    display: inline-block;
+    
+}
+.div3{
+    margin-left: 40%;
+}
+.margenbotn{
+    margin-top: 5%;
+    color: white;
+}
+#margenImg{
+    margin-top: 8%;
+
+}
+#textoCentrado5{
+    text-align: center;
+    color: rgb(58, 58, 58);
+    margin-top: 4%;
+}
+#textoCentrado6{
+    text-align: center;
+    color: rgb(58, 58, 58);
+    margin-top: 4%;
+}
+.sombra{
+    background-color: white;
+    width: 280px;
+    height: 150px;
+    margin-left: 350px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 20px 2px #6b6b6b; 
+ 
+}
+#margenimagen{
+    margin-top: 100px;
+}
+.sombra2{
+    background-color: white;
+    width: 280px;
+    height: 150px;
+    margin-left: 30px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 15px 2px #414040; 
+ 
+}
+#estrellas{
+    display: inline-block;
+    background-color: white;
+ 
+    border-radius: 2%;
+   
+}
+#estrellas2{
+    display: inline-block;
+    background-color: white;
+    height: 110%;
+    width: 110%;
+    border-radius: 2%;
+    margin-left: 150px;
+    margin-top: 200px;
+    
+}
+#boton22{
+    background-color: rgb(51, 51, 80);
+    color: white;
+    border-radius: 3%;
+}

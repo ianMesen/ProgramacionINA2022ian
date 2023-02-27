@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+    <div class="container" id="arriba"  >
+        
+        <div class="row" > 
+            <div class="col-lg-5" ><h7>View theme info</h7> </div>
+          
+            <div class="col-lg-3" >
+                <div id="div1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                        <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+                        </svg>
+                </div>
+                <div class="div2" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg></div>
+               
+            </div>
+            <div class="col-lg-1" ></div>
+
+            <div class="col-lg-3" >
+                <div class="div2">
+                    <div class="input" >
+                                    
+                        <select name="lugares" id="lugares" style="border: 0px;">
+                            <option value="1">Standard license </option>
+                            <option value="1">Standard license $49.00</option>
+                            <option value="2">Multisite license $149.00</option>
+                            <option value="3">Extended license $499.00</option>
+                        </select>
+                    </div>
+                </div>
+                
+                    <div class="div2" >
+                        <button type="button" class="btn" id="botonArriba">Anadir al carrito $49.00</button>
+                    </div>
+
+                    <div class="div2">
+                    <svg id="izquierda" xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg></div>
+                
+            </div>
+            <div class="linea1">
+                <hr style="width: 100%;" style="height: 100px;" >
+            </div>
+        </div>
+       
+
+        <!--segunda Fila-->
+        <div class="row" >
+
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6" style="display: inline-block;">
+                <div style="margin-left: 20%;" ><img src="foto/logo-dark.png" alt="logo" width="140"> 
+
+                    <div style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg></div>
+
+                    <div class="input" style="display: inline-block;"> 
+                        <select name="destinos" id="destinos" style="border: 0px;">
+                            <option value="1">New York</option>
+                            <option value="2">Los Angeles</option>
+                            <option value="3">Chicago</option>
+                            <option value="4">Houston</option>
+                            <option value="5">philadelphina</option>
+                            <option value="6">San diego</option>
+                            <option value="7">Miami </option>
+                        </select>
+                    </div>
+                    
+                    <div style="display: inline-block;"><button type="button" class="btn ">Cuisine</button></div>
+                    
+                    <div style="display: inline-block;">   <button type="button" class="btn ">Back to main demo</button></div>
+                 
+                </div>
+            </div>
+            <div class="col-lg-5" id="derecha"  >
+                <div style="display: inline-block;" class="div3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                </div>
+                <div style="display: inline-block;" style="margin-left: 30%;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        </svg>
+                </div>
+                
+            </div>
+
+           
+            
+        </div>
+        <!--tercera fila -->
+        <div class="row" style="background-image: url(foto/fondo1.jpg);" id="ordenFondo">
+            <div class="col-lg-3"> </div>
+            <div class="col-lg-6" >
+                <div style="text-align: center;"> #1 Food Delivery Service since 2010</div>
+                <div style="text-align: center;"><h1>We Delivery you favorite food fresh and fast in 
+                        
+                    <div class="input" style="display: inline-block;"> 
+                        <select name="destinos2" id="newYork" >
+                            <option value="1">New York</option>
+                            <option value="3">Chicago</option>
+                            <option value="4">Houston</option>
+                            <option value="6">San diego</option>
+                            <option value="7">Miami </option>
+                        </select>
+                    </div>
+
+                    </h1>
+                  
+                </div>
+                
+                <div style="text-align: center;" class="margenbotn">
+                    <button type="button" class="btn" id="botonCentro">What do you want to eat?</button>
+                </div>
+                
+                
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        
+        <!--cuerta Fila-->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div id="textoCentrado1">
+                    <h1>Trending food in your city</h1>
+                </div>
+
+            </div>
+
+        </div>
+          <!--quinta Fila-->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div id="textoCentrado2" >
+                    <h6>Choose what you want and we dilever it to you</h6>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+          <!--sexta Fila-->
+          <div class="row" >
+
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-2">
+
+                <div >
+                    <div class="card" style="width: 25rem; margin-top: 5%;" >
+                        <img src="foto/01.jpg" class="card-img-top" alt="1" > 
+                        <div class="card-body" style="text-align: center;">
+                          <p class="card-text"><h3>Burgers & Fries</h3></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2">
+
+                <div >
+                    <div class="card" style="width: 25rem; margin-top: 5%;">
+                        <img src="foto/02.jpg" class="card-img-top" alt="1">
+                        <div class="card-body" style="text-align: center;">
+                          <p class="card-text"><h3>Noodles</h3></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2">
+
+                <div >
+                    <div class="card" style="width: 25rem; margin-top: 5%;" >
+                        <img src="foto/03.jpg" class="card-img-top" alt="1">
+                        <div class="card-body" style="text-align: center;">
+                          <p class="card-text"><h3>sushi & rolls</h3></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2"></div>
+        </div>
+
+        <!--7-->
+        <div class="row">
+            
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+
+               
+                <div id="margenImg">
+                    <div class="card" style="width: 25rem;" >
+                        <img src="foto/04.jpg" class="card-img-top" alt="1">
+                        <div class="card-body" style="text-align: center;">
+                          <p class="card-text"><h3>Pizza & Pasta</h3></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2">
+
+                    <div id="margenImg">
+                        <div class="card" style="width: 25rem;" >
+                            <img src="foto/05.jpg" class="card-img-top" alt="1">
+                            <div class="card-body" style="text-align: center;">
+                            <p class="card-text"><h3>Coffee & desert</h3></p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2">
+
+                    <div id="margenImg">
+                        <div class="card" style="width: 25rem;" >
+                            <img src="foto/06.jpg" class="card-img-top" alt="1" >
+                            <div class="card-body" style="text-align: center;" >
+                            <p class="card-text"><h3>Healty & Food</h3></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+             </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <!--8-->
+
+        <div class="row" style="background-image: url(foto/mobile-app-bg.jpg);" id="ordenfondo2">
+            <div class="col-lg-3" > </div>
+            <div class="col-lg-3" style="text-align: center;" style="margin:0px auto;">
+                <div style="margin-top: 40%;">
+                    <h2>Order food on the go with Cartzilla App</h2>
+                    <h6>Pay with in app wallet, collect loyalty points, track your orders in real time and much more.</h6>
+                    <button type="button" class="btn" id="boton2">Download on the</br>
+                        App Store</button>
+                    
+                    <button type="button" class="btn" id="boton2">Download on the</br>
+                        Google Store</button>
+                </div>
+            </div>
+      
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+              <div id="imagen"><img src="foto/phone.png" alt="phone" height="20%" width="51%"></div>
+            </div>
+        </div>
+        
+        <!--9-->
+        
+        <div class="row" >
+            <!-- <div class="col-lg-2"></div> -->
+            <div class="col-lg-6"  id="fondobloques"  >
+
+                <div>
+                    <div class="imagen111">
+                        <h2 style="color: black;">Become a Courier</h2>
+                        Earn competitive salary as delivery </br>courier working flexible schedule.</br>
+                        <button type="button" class="btn" id="boton2">Start earning</button>
+                    </div>
+                    <div class="imagen111">
+                        <img src="foto/courier.png" alt="person" height="200%" width="110%">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6" id="fondobloques2" >
+
+                <div>
+                    <div class="imagen1">
+                        <h2 style="color: black;">Become a Partner </h2>
+                        Grow your business by reaching new</br> customers.</br>
+                    
+                        <button type="button" class="btn" id="boton2">Partner whit us</button>
+                    </div>
+                    <div class="imagen1">
+                        <img src="foto/chef.png" alt="chef" height="120%" width="124%">
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div class="col-lg-2"></div> -->
+        </div>
+    
+        <!--10-->
+        <div class="row">
+        <div class="col-lg-12">
+
+            <div id="textoCentrado5">
+                <h1>Popular restaurants in your city</h1>
+            </div>
+
+        </div>
+
+        </div>
+        <!--11-->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div id="textoCentrado2">
+                    <h6>Check the best restaurants near you</h6>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        
+        <br>
+        <br>
+        <br>
+     
+    
+     <!--12-->
+        <div class="row">
+            <div >
+                <div class="col-lg3" style="display: inline-block;" >
+                    
+                    <div class="sombra" style="text-align: center;">
+                        <div >
+                            <a href="#" ><img src="foto/Comida1.png" alt="1" height="80px" width="150px" style="margin-top: 30px;" ></a>
+                        </div>
+                    </div>
+        
+                </div>
+            
+                <div class="col-lg3" style="display: inline-block;">
+                    
+                    <div class="sombra2" style="text-align: center;">
+                        <img src="foto/Comida2.png" alt="2" height="80px" width="150px" style="margin-top: 30px;" >
+                    </div>
+        
+                </div>
+                
+                <div class="col-lg3" style="display: inline-block;">
+
+                    <div class="sombra2" style="text-align: center;">
+                        <img src="foto/Comida3.png" alt="3" height="80px" width="150px" style="margin-top: 30px;">
+                    </div >
+        
+                </div>
+                
+                <div class="col-lg3" style="display: inline-block;">
+
+                    <div class="sombra2" style="text-align: center;">
+                        <img src="foto/Comida4.png" alt="4" height="80px" width="150px" style="margin-top: 30px;">
+                    </div>
+        
+
+            </div>
+        </div>
+       
+        <!--13-->
+        <div class="row">
+            <div >
+                <div class="col-lg3" style="display: inline-block;" >
+                    
+                    <div class="sombra" style="text-align: center; margin-top: 5%;">
+                        <div>
+                            <img src="foto/Comida5.png" alt="5" height="80px" width="150px" style="margin-top: 30px;">
+                        </div>
+                    </div>
+        
+                </div>
+            
+                <div class="col-lg3" style="display: inline-block;">
+                    
+                    <div class="sombra2" style="text-align: center;">
+                        <img src="foto/Comida6.png" alt="6" height="80px" width="150px" style="margin-top: 30px;">
+                    </div>
+        
+                </div>
+                
+                <div class="col-lg3" style="display: inline-block;">
+
+                    <div class="sombra2" style="text-align: center;">
+                        <img src="foto/Comida7.png" alt="7" height="80px" width="150px" style="margin-top: 30px;">
+                    </div class="sombra2" style="text-align: center;">
+        
+                </div>
+                
+                <div class="col-lg3" style="display: inline-block;">
+
+                    <div class="sombra2" style="text-align: center;">
+                        <img src="foto/Comida8.png" alt="8" height="80px" width="150px" style="margin-top: 30px;">
+                    </div>
+    
+            </div>
+        </div>
+        <!--14-->
+        <div class="row">
+            <div >
+                <div class="col-lg3" style="display: inline-block;" >
+                    
+                    <div class="sombra" style="text-align: center; margin-top: 5%;">
+                        <div>
+                            <img src="foto/Comida9.png" alt="9" height="80px" width="150px" style="margin-top: 30px;">
+                        </div>
+                    </div>
+        
+                </div>
+            
+                <div class="col-lg3" style="display: inline-block;">
+                    
+                    <div class="sombra2" style="text-align: center;">
+                        <img src="foto/Comida10.png" alt="10" height="80px" width="150px" style="margin-top: 30px;">
+                    </div>
+        
+                </div>
+                
+                <div class="col-lg3" style="display: inline-block;">
+
+                    <div class="sombra2" style="text-align: center;">
+                        <img src="foto/Comida11.png" alt="11" height="80px" width="150px" style="margin-top: 30px;">
+                    </div class="sombra2" style="text-align: center;">
+        
+                </div>
+                
+                <div class="col-lg3" style="display: inline-block;">
+
+                    <div class="sombra2" style="text-align: center;">
+                        <img src="foto/Comida12.png" alt="12" height="80px" width="150px" style="margin-top: 30px;">
+                    </div>
+    
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+        
+    <!--15-->
+        <!-- </div>
+        <div class="row" style=" height: 100%;">
+            <div class="col-lg-12">
+
+                <div >
+                    <h1 id="textoCentrado6">Customer reviews</h1>
+                    
+
+
+                
+                </div>
+                
+            </div>
+
+        </div>
+        -->
+
+
+        <!--16-->
+      
+
+        <div style="background-color: rgb(169, 177, 199); ">
+            <div class="row">
+                <div class="col-lg-12" >
+                <h2 id="textoCentrado6" style="margin-top: 5%; height: 30px;"> Customer reviews</h2>
+                </div>
+            </div>
+           
+            <div class="row" style="margin-top: 5%; ">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2" >
+                    <div class="card" style="width: 18rem;" >
+                        
+                        <div class="card-body" >
+                            <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <p class="card-text">Some quick example text to build on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                        
+                            </p>
+
+                        </div>
+                    </div>
+            
+                </div>
+
+                <div class="col-lg-2" >
+                    <div class="card" style="width: 18rem;" >
+                        
+                        <div class="card-body" >
+                            <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <p class="card-text">Some quick example text to build on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                        
+                            </p>
+
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="col-lg-2" >
+                    <div class="card" style="width: 18rem;" >
+                        
+                        <div class="card-body" >
+                            <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <p class="card-text">Some quick example text to build on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                        
+                            </p>
+
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="col-lg-2" >
+                    <div class="card" style="width: 18rem;" >
+                        
+                        <div class="card-body" >
+                            <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <p class="card-text">Some quick example text to build on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                                Some quick example text on the <br>
+                        
+                            </p>
+
+                        </div>
+                    </div>
+            
+                </div>
+
+                <div class="col-lg-2"></div>
+            </div>
+            
+            <div class="row" style="margin-top: 2%; ">
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-2">
+                    <div id="fotosPerfil">
+                        <img src="foto/04 (1).jpg"  width="50px" height="50px" style="border-radius: 100%;">
+                        <h6 style="color: black; display: inline;">Laura</h6><br>
+                        <div style="margin-left: 18%; margin-top: -7%;">Dec 19,2020</div>
+                    </div>
+                   
+                </div>
+
+                <div class="col-lg-2">
+                    <div id="fotosPerfil">
+                        <img src="foto/03 (1).jpg"  width="50px" height="50px" style="border-radius: 100%;">
+                        <h6 style="color: black; display: inline-block;">Ricardo</h6><br>
+                        <div style="margin-left: 18%; margin-top: -7%;">Dec 19,2020</div>
+                    </div>
+                   
+                </div>
+                <div class="col-lg-2">
+
+                    <div id="fotosPerfil">
+                        <img src="foto/01 (2).jpg"  width="50px" height="50px" style="border-radius: 100%;">
+                        <h6 style="color: black; display: inline-block;">Mary</h6><br>
+                        <div style="margin-left: 18%; margin-top: -7%;">Dec 19,2020</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-2" >
+                    <div id="fotosPerfil">
+                        <img src="foto/01 (1).jpg" alt="1" width="50px" height="50px" style="border-radius: 100%;">
+                        <h6 style="color: black; display: inline-block;">Rafael</h6><br>
+                        <div style="margin-left: 18%; margin-top: -7%;">Dec 19,2020</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-2"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+        
+            </div>
+        </div>
+
+
+        <footer style="background-color: rgb(51, 51, 80); color: white;">
+            <div class="row" style="margin-left: 16%;">
+                <div class="col-lg-2">
+                    <div >
+                        <h1 >Cartzilla</h1>
+                        <div style="margin-left: 10%;">
+                            <img src="foto/bandera.png" alt="bandera" height="20" width="20">
+                            eng/$
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h3>Join us</h3> 
+                    Careers <br>
+                    Restaurants <br>
+                    Become a Courier <br>
+                    About
+                </div>
+                <div class="col-lg-2">
+                    <h3>Let us help you</h3>
+                    
+                    Help Center <br>
+                    Support <br>
+                    Contacts
+                </div>
+                <div class="col-lg-2">
+                    <h3> Follow us</h3>
+                    Facebook <br>
+                    Twitter <br>
+                    Instagram
+
+                </div>
+                <div class="col-lg-4">
+                    <h3>Download our app</h3>
+                    
+                        <button type="button" class="btn btn-outline-secondary">Download on the</br>
+                            App Store</button>
+
+                        <button type="button" class="btn btn-outline-secondary">Download on the</br>
+                            Google Store</button>
+                </div>
+            </div>
+
+            <div class="linea1">
+                <hr style="width: 74%; margin-left: 16%;" style="height: 100px;" >
+            </div>
+
+            <div class="row" style="margin-left: 16%; color: gray;" >
+                <div class="col-lg-6" >
+                    <p>© All rights reserved. Made by Createx Studio</p>
+                </div>
+                <div class="col-lg-6" style="float: right;">
+                    <p>Privacy Policy
+                        Terms & Conditions
+                        Cookies Policy</p>
+                </div>
+   
+            </div>
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html> 
