@@ -6,9 +6,11 @@ import { PersonajesComponent } from './personajes.component';
 import { MaterialModule } from 'src/app/material.module';
 
 
+
 @NgModule({
   declarations: [
-    PersonajesComponent
+    PersonajesComponent,
+    
   ],
   imports: [
     CommonModule,

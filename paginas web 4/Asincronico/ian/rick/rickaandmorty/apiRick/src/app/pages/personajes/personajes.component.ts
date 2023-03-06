@@ -1,8 +1,7 @@
 import { Component, OnInit,AfterViewInit,ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
-import { Personaje } from 'src/app/shared/models/personaje';
+import { InfoModel } from 'src/app/shared/models/infomodel';
 import { PersonajesService } from 'src/app/shared/services/personajes.service';
-import { PersonajesModule } from './personajes.module';
 
 @Component({
   selector: 'app-personajes',
@@ -10,7 +9,7 @@ import { PersonajesModule } from './personajes.module';
   styleUrls: ['./personajes.component.css']
 })
 export class PersonajesComponent implements OnInit, AfterViewInit {
-  info:any;
+  info:InfoModel;
   displayedColumns: string[] = ['id', 'name', 'status','species', 'gender','image','created'];
   dataSource = [];
 
@@ -19,10 +18,10 @@ export class PersonajesComponent implements OnInit, AfterViewInit {
   
   constructor(private personajeSrv: PersonajesService){ }
   next():void{
-      alert('estoy en next');
+    this.getPersonaje(this.info.next);
   }
   preview():void{
-    alert('estoy en preview');
+    this.getPersonaje(this.info.prev);
   }
   ngAfterViewInit() {
     //  this.dataSource.paginator = this.paginator;
@@ -30,19 +29,19 @@ export class PersonajesComponent implements OnInit, AfterViewInit {
 
   ngOnInit():void{
 
-    this.personajeSrv.getPersonaje().subscribe((data:any)=>{
+   this.getPersonaje('https://rickandmortyapi.com/api/character');
       
+  };
+  getPersonaje(url:string){
+    this.personajeSrv.getPersonaje(url).subscribe((data:any)=>{
+        
       const {info,results}=data;
     
-
+  
       this.dataSource=results;
       this.info=info;
       console.log(this.info)
-    });
 
-   
-  }
-
-
-
-}
+    }); 
+  };
+};
