@@ -15,4 +15,9 @@ export class PersonajesService {
 
     return this.http.get(<string>url);
   }
+
+  getPersonajeById(id:any):Observable<Personaje>{
+    return this.http.get<Personaje>('https://rickandmortyapi.com/api/character/'+id)
+
+  }
 }

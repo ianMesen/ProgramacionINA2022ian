@@ -5,11 +5,17 @@ import { PersonajesRoutingModule } from './personajes-routing.module';
 import { PersonajesComponent } from './personajes.component';
 import { MaterialModule } from 'src/app/material.module';
 
+import { ListaCardsComponent } from './lista-cards/lista-cards.component';
+import { DetallePersonajeComponent } from './detalle-personaje/detalle-personaje.component';
+
 
 
 @NgModule({
   declarations: [
     PersonajesComponent,
+    
+    ListaCardsComponent,
+    DetallePersonajeComponent,
     
   ],
   imports: [

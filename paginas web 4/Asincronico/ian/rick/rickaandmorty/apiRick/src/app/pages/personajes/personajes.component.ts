@@ -10,7 +10,7 @@ import { PersonajesService } from 'src/app/shared/services/personajes.service';
 })
 export class PersonajesComponent implements OnInit, AfterViewInit {
   info:InfoModel;
-  displayedColumns: string[] = ['id', 'name', 'status','species', 'gender','image','created'];
+  displayedColumns: string[] = ['id', 'name', 'status','species', 'gender','image','created','actions'];
   dataSource = [];
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
