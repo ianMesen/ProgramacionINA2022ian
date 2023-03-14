@@ -1,6 +1,7 @@
-import { Component, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
+import { Component } from '@angular/core';
+
 import { InfoModel } from 'src/app/shared/models/infomodel';
+import { Location } from 'src/app/shared/models/location';
 import { LocationsService } from 'src/app/shared/services/locations.service';
 @Component({
   selector: 'app-locations',
@@ -9,10 +10,11 @@ import { LocationsService } from 'src/app/shared/services/locations.service';
 })
 export class LocationsComponent  {
   info:InfoModel;
-  displayedColumns: string[] = ['id', 'name', 'type','dimesion', 'created'];
-  dataSource = [];
+  lista:Location[]=[];
+  // displayedColumns: string[] = ['id', 'name', 'type','dimesion', 'created','detalles'];
+  // dataSource = [];
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+
 
   
   constructor(private locationSrv: LocationsService){ }
@@ -24,9 +26,7 @@ export class LocationsComponent  {
    preview():void{
      this.getLocations(this.info.prev);
    }
-  ngAfterViewInit() {
-    //  this.dataSource.paginator = this.paginator;
-  }
+
 
   ngOnInit():void{
 
@@ -35,13 +35,13 @@ export class LocationsComponent  {
   };
   getLocations(url:string){
     this.locationSrv.getLocation(url).subscribe((data:any)=>{
-        
+      this.lista=[];
       const {info,results}=data;
-    
+      this.lista=[...this.lista,...results];
   
-      this.dataSource=results;
+      // this.dataSource=results;
       this.info=info;
-      console.log(this.dataSource)
+      // console.log(this.dataSource)
 
     }); 
   };

@@ -4,5 +4,5 @@ export interface Episodes{
     name: String;
     air_date: String;
     episode:String;
-    created:String;
+    created:Date;
 }

@@ -1,14 +1,22 @@
-<div class="card " style="width: 18rem;">
+<div>
+  <link rel="stylesheet" href="detalle-personaje.component.css">
+  <div class="card " style="width: 18rem;">
     <img src="{{personaje.image}}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{personaje.name}}</h5>
       <p>{{personaje.id}}</p>
-   
+
       <p>{{personaje.status}}</p>
       <p>{{personaje.gender}}</p>
-      <p>{{personaje.created}}</p>
+      <p>{{personaje.created | date:'short'}} </p>
+
     </div>
   </div>
-
-
-
+</div>
+<br>
+<br>
+<table style="color: rgb(196, 40, 40); background-color: rgb(49, 49, 49);">
+  <tr *ngfor="let episodes of personaje">
+    <button [routerLink]="['/personajes/detalle/']"> detalles</button> 
+  </tr>
+</table>

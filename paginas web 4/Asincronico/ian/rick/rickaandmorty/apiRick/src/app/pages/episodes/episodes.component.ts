@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
+import { Episodes } from 'src/app/shared/models/episodes';
+
 import { InfoModel } from 'src/app/shared/models/infomodel';
 import { EpisodesService } from 'src/app/shared/services/episodes.service';
 @Component({
@@ -9,12 +10,11 @@ import { EpisodesService } from 'src/app/shared/services/episodes.service';
 })
 export class EpisodesComponent  {
   info:InfoModel;
-  displayedColumns: string[] = ['id', 'name', 'air_date','episode', 'created'];
-  dataSource = [];
+  lista:Episodes[]=[];
+  // displayedColumns: string[] = ['id', 'name', 'air_date','episode', 'created'];
+  // dataSource = [];
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  
   constructor(private episodeSrv: EpisodesService){ }
 
    next():void{
@@ -24,9 +24,7 @@ export class EpisodesComponent  {
    preview():void{
      this.getEpisodes(this.info.prev);
    }
-  ngAfterViewInit() {
-    //  this.dataSource.paginator = this.paginator;
-  }
+
 
   ngOnInit():void{
 
@@ -35,13 +33,13 @@ export class EpisodesComponent  {
   };
   getEpisodes(url:string){
     this.episodeSrv.getEpisode(url).subscribe((data:any)=>{
-        
+      this.lista=[]; 
       const {info,results}=data;
-    
+      this.lista=[...this.lista,...results];
   
-      this.dataSource=results;
+      // this.dataSource=results;
       this.info=info;
-      console.log(this.dataSource)
+      // console.log(this.dataSource)
 
     }); 
   };

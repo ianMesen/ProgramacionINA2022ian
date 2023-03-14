@@ -1,5 +1,5 @@
 import { Component, OnInit,AfterViewInit,ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
+
 import { InfoModel } from 'src/app/shared/models/infomodel';
 import { PersonajesService } from 'src/app/shared/services/personajes.service';
 
@@ -8,12 +8,12 @@ import { PersonajesService } from 'src/app/shared/services/personajes.service';
   templateUrl: './personajes.component.html',
   styleUrls: ['./personajes.component.css']
 })
-export class PersonajesComponent implements OnInit, AfterViewInit {
+export class PersonajesComponent implements OnInit {
   info:InfoModel;
   displayedColumns: string[] = ['id', 'name', 'status','species', 'gender','image','created','actions'];
   dataSource = [];
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+
 
   
   constructor(private personajeSrv: PersonajesService){ }
@@ -23,9 +23,7 @@ export class PersonajesComponent implements OnInit, AfterViewInit {
   preview():void{
     this.getPersonaje(this.info.prev);
   }
-  ngAfterViewInit() {
-    //  this.dataSource.paginator = this.paginator;
-  }
+
 
   ngOnInit():void{
 
