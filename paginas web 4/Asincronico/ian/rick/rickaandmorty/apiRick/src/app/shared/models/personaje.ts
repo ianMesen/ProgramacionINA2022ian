@@ -9,6 +9,6 @@ export interface Personaje{
     gender:String;
     image: String;
     created:Date;
-
+    episode:[];
 }
 

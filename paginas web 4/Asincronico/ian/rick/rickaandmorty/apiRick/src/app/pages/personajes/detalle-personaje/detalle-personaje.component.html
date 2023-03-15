@@ -13,10 +13,15 @@
     </div>
   </div>
 </div>
-<br>
-<br>
-<table style="color: rgb(196, 40, 40); background-color: rgb(49, 49, 49);">
-  <tr *ngfor="let episodes of personaje">
-    <button [routerLink]="['/personajes/detalle/']"> detalles</button> 
+<table >
+  <h1 style="text-align: center; margin-top: 10%;">Episodios donde sale {{personaje.name}}</h1>
+  <h3 style="text-align: center;">episodios</h3>
+  <tr *ngFor="let epi of personaje?.episode" >
+    <td > {{epi}} 
+    <button mat-button color="primary" [routerLink]="['/episodes/detalle/',getIdEpisodio(epi)]"> detalle episodio</button> 
+    <td>
+ 
   </tr>
 </table>
+
+
