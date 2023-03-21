@@ -3,9 +3,7 @@ import { Column, Entity, PrimaryColumn } from "typeorm";
 @Entity()
 export class Clientes {
     // se agregan las columnas y sus propiedades de la tabla
-    @PrimaryColumn()
-    id: number
-    
+   
     @PrimaryColumn()
     cedula: number
 

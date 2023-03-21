@@ -22,16 +22,16 @@ class ClientesController{
      
         const clientesRepo = AppDataSource.getRepository(Clientes);
  
-        const id = parseInt(req.params['id']);
-        if (!id) {
-          return res.status(400).json({ message: 'id del cliente no indicado' })
+        const cedula = parseInt(req.params['cedula']);
+        if (!cedula) {
+          return res.status(400).json({ message: 'cedula del cliente no indicado' })
         }
         try { 
-          const cliente = await clientesRepo.findOneOrFail({ where: { id } })
+          const cliente = await clientesRepo.findOneOrFail({ where: { cedula } })
           return res.status(200).json(cliente)
     
         } catch (error) { 
-          return res.status(400).json({ message: 'el id del cliente no se encontro' })
+          return res.status(400).json({ message: 'el cedula del cliente no se encontro' })
     
         }
     
@@ -42,14 +42,14 @@ class ClientesController{
         
         const clientesReposi = AppDataSource.getRepository(Clientes);
     
-        const id = parseInt(req.params['id']);
+        const cedula = parseInt(req.params['cedula']);
       
         let cliente: Clientes; 
   
         try {
-            cliente = await clientesReposi.findOneOrFail({ where: { id } })
+            cliente = await clientesReposi.findOneOrFail({ where: { cedula } })
         } catch (error) {
-          return res.status(400).json({ message: 'no se encontro con el id que desea eliminar' })
+          return res.status(400).json({ message: 'no se encontro con la cedula que desea eliminar' })
     
         }
        
@@ -67,10 +67,9 @@ class ClientesController{
         console.log(req.body);
     
         const { id, cedula, nombre, apellido1,apellido2,email,fechaNac } = req.body;
-        //validar datos entrada que vienen en el cuerpo
-        //regla negocio para validar datos entrada campos que no permita nulos o campos a nivel de negocio requiere y q a nivel de db permita null
-        if (!id) {
-          return res.status(400).json({ message: 'falta el id' })
+        //datos entrada
+        if (!cedula) {
+          return res.status(400).json({ message: 'falta la cedula' })
         } else if (!cedula) {
           return res.status(400).json({ message: 'falta la cedula' })
         } else if (!nombre) {
@@ -85,19 +84,17 @@ class ClientesController{
           return res.status(400).json({ message: 'falta el fechaNac' })
         }
     
-    
         const clientesReposi = AppDataSource.getRepository(Clientes);
+
+
+        if (await clientesReposi.findOne({ where: { cedula } })) {
     
-    
-    
-        if (await clientesReposi.findOne({ where: { id } })) {
-    
-          return res.status(400).json({ message: 'ya existe ese id en los clientes' })
+          return res.status(400).json({ message: 'ya existe ese cedula en los clientes' })
     
         }
     
         let cliente = new Clientes();
-        cliente.id = id;
+    
         cliente.cedula = cedula;
         cliente.nombre = nombre;
         cliente.apellido1 = apellido1;
@@ -115,15 +112,13 @@ class ClientesController{
       //actualizar cliente
       static update = async (req: Request, res: Response) => {
     
-        const id = parseInt(req.params['id']);
-        const { cedula,nombre, apellido1, apellido2,email,fechaNac } = req.body;
+        const cedula = parseInt(req.params['cedula']);
+        const { nombre, apellido1, apellido2,email,fechaNac } = req.body;
       
         //datos entrada
-        if (!id) {
-          return res.status(400).json({ message: 'falta el id' })
-        } else if (!cedula) {
-          return res.status(400).json({ message: 'falta la cedula' })
-        } else if (!nombre) {
+        if (!cedula) {
+          return res.status(400).json({ message: 'falta el cedula' })
+        }  else if (!nombre) {
           return res.status(400).json({ message: 'falta el nombre' })
         } else if (!apellido1) {
           return res.status(400).json({ message: 'falta el apellido1' })
@@ -140,15 +135,15 @@ class ClientesController{
     
         try {
     
-          cliente = await clientesReposi.findOneOrFail({ where: { id } })
+          cliente = await clientesReposi.findOneOrFail({ where: { cedula } })
     
         } catch (error) {
-          return res.status(400).json({ message: 'no se encontro con el id' })
+          return res.status(400).json({ message: 'no se encontro con el cedula' })
     
         }
     
-        
-        cliente.cedula = cedula;
+
+      
         cliente.nombre = nombre;
         cliente.apellido1 = apellido1;
         cliente.apellido2 = apellido2;
