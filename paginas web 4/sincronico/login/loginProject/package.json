@@ -26,6 +26,6 @@
    },
    "scripts": {
       "typeorm": "typeorm-ts-node-commonjs",
-      "dev":"set debug=* &&  ts-node-dev --respawn --transpile-only ./src/index.ts   "
+      "dev": "set debug=* &&  ts-node-dev --respawn --transpile-only ./src/index.ts   "
    }
 }

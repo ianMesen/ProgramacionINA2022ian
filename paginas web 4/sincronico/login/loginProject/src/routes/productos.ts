@@ -9,7 +9,10 @@ routes.get('', ProductosController.get);
 routes.get('/:id', ProductosController.getById);
 // ruta para eliminacion logica de un producto
 routes.delete('/:id', ProductosController.deleteById);
-
+routes.post('/create', ProductosController.create);
+routes.patch('/update/:id', ProductosController.update);
+//patch caerle encima al que ya tengo
+//put eliminar y volver a crear
 
 
 export default routes;

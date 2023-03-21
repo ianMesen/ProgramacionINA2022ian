@@ -4,7 +4,7 @@ import productos from "./productos";
 
 const routes = Router();
 
-// ruta para productos
+// ruta para productos,clientes
 routes.use('/productos', productos);
 routes.use('/clientes', clientes);
 

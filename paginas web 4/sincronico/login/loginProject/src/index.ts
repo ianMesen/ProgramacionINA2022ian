@@ -1,8 +1,10 @@
-import * as express from "express"
-import { AppDataSource } from "./data-source"
-import helmet from "helmet"
-import cors = require("cors")
+import * as express from "express";
+import { AppDataSource } from "./data-source";
+import helmet from "helmet";
+import cors = require("cors");
 import routes from "./routes";
+
+
 
 
 const Port = process.env.port || 3000;
@@ -11,6 +13,7 @@ AppDataSource.initialize().then(async () => {
 
     // create express app
     const app = express();
+    app.use(express.json())
     app.use(cors());
     app.use(helmet());
     app.use('/', routes)
