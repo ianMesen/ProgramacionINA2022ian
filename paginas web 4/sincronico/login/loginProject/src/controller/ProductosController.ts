@@ -1,7 +1,9 @@
 import { Request, response, Response } from "express";
+import {validate} from 'class-validator';
 // import { request } from "https";
 import { AppDataSource } from "../data-source";
 import { Productos } from "../entity/Productos";
+import { Categorias } from "../entity/Categorias";
 
 class ProductosController {
 
@@ -11,7 +13,7 @@ class ProductosController {
     const productosRepo = AppDataSource.getRepository(Productos);
 
     // Vericacion de entrada a la BD
-    const listaProduct = await productosRepo.find({ where: { estado: true } });//amlacena todos los produtos en listaProduct await llamado asincronico
+    const listaProduct = await productosRepo.find({ where: { estado: true } ,relations:['categoria']});//amlacena todos los produtos en listaProduct await llamado asincronico
 
     if (listaProduct.length > 0) { // si encuantra 1 o mas datos:Productos los muestra
       return res.status(200).json(listaProduct);
@@ -31,7 +33,7 @@ class ProductosController {
       return res.status(400).json({ message: 'no se indico el id' })
     }
     try { // si lo encuantra manda la respuesta en Json
-      const producto = await productosRepo.findOneOrFail({ where: { id, estado: true } })
+      const producto = await productosRepo.findOneOrFail({ where: { id, estado: true },relations:['categoria'] })
       return res.status(200).json(producto)
 
     } catch (error) { //si no encuantra el ID manda un msnJson
@@ -74,59 +76,85 @@ class ProductosController {
 
     console.log(req.body);
 
-    const { id, nombre, idCategoria, precio } = req.body;
+    const { id, nombre,idCategoria, precio } = req.body;
     //validar datos entrada que vienen en el cuerpo
     //regla negocio para validar datos entrada campos que no permita nulos o campos a nivel de negocio requiere y q a nivel de db permita null
     if (!id) {
       return res.status(400).json({ message: 'falta el id' })
-    } else if (!nombre) {
-      return res.status(400).json({ message: 'falta el nombre' })
-    } else if (!idCategoria) {
-      return res.status(400).json({ message: 'falta el categoria' })
-    } else if (!precio) {
-      return res.status(400).json({ message: 'falta el precio' })
     }
+    //  else if (!nombre) {
+    //   return res.status(400).json({ message: 'falta el nombre' })
+    //  } 
+     else if (!idCategoria) {
+       return res.status(400).json({ message: 'falta el categoria' })
+     } 
+    // else if (!precio) {
+    //   return res.status(400).json({ message: 'falta el precio' })
+    // }
 
 
     const productosRepo = AppDataSource.getRepository(Productos);
-
-
-
+    const categoriaRepo = AppDataSource.getRepository(Categorias);
     if (await productosRepo.findOne({ where: { id } })) {
 
       return res.status(400).json({ message: 'ya existe ese id en los productos' })
 
     }
 
+    let categoria = new Categorias();
+
+    try {
+      categoria=await categoriaRepo.findOneByOrFail({id:idCategoria});
+    } catch (error) {
+      return res.status(404).json({message:'ya existe la categoria inidicada'})
+    }
+
+
     let producto = new Productos();
     producto.id = id;
     producto.nombre = nombre;
-    producto.idCategoria = idCategoria;
+    producto.categoria = categoria;
     producto.precio = precio;
     producto.estado = true;
+
+    //class validator
+    const errors=await validate(producto,{ validationError: { target: false,value:false } });
+    if(errors.length>0){
+      return res.status(400).json(errors);
+    }
+
 
     await productosRepo.save(producto);
     return res.status(201).json({ message: 'el producto a sido creado' });
 
   }
 
+
+
+
+  //actualizar productos
   static update = async (req: Request, res: Response) => {
 
     const id = parseInt(req.params['id']);
-    const { nombre, idCategoria, precio } = req.body;
+    const { nombre,idCategoria, precio } = req.body;
   
     //valido datos de entrada
     if (!id) {
       return res.status(400).json({ message: 'falta el id' })
-    } else if (!nombre) {
-      return res.status(400).json({ message: 'falta el nombre' })
-    } else if (!idCategoria) {
-      return res.status(400).json({ message: 'falta el categoria' })
-    } else if (!precio) {
-      return res.status(400).json({ message: 'falta el precio' })
-    }
+    } 
+    // else if (!nombre) {
+    //   return res.status(400).json({ message: 'falta el nombre' })
+    // 
+  //} 
+  else if (!idCategoria) {
+       return res.status(400).json({ message: 'falta el categoria' })
+     }
+    // else if (!precio) {
+    //   return res.status(400).json({ message: 'falta el precio' })
+    // }
 
     const productosRepo = AppDataSource.getRepository(Productos);
+    const categoriaRepo = AppDataSource.getRepository(Categorias);
     let producto: Productos;
 
     try {
@@ -138,10 +166,28 @@ class ProductosController {
 
     }
 
+    let categoria = new Categorias();
+
+    try {
+      categoria=await categoriaRepo.findOneByOrFail({id:idCategoria});
+    } catch (error) {
+      return res.status(404).json({message:'no existe la categoria inidicada'})
+    }
+
+
     producto.nombre = nombre;
-    producto.idCategoria = idCategoria;
+    producto.categoria = categoria;
     producto.precio = precio;
-    producto.estado = true;
+
+
+    //validar class validator
+    const errors=await validate(producto,{ validationError: { target: false,value:false } });
+    if(errors.length>0){
+      
+      return res.status(400).json(errors);
+    }
+
+
 
     await productosRepo.save(producto);
 
