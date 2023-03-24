@@ -1,0 +1,69 @@
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+
+ 
+      <ng-container matColumnDef="id" >
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> idEmpleado </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+  
+
+      <ng-container matColumnDef="idPersonas">
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> idPersonas </th>
+        <td mat-cell *matCellDef="let element"> {{element.persona.id}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="idPuesto">
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> idPuesto </th>
+        <td mat-cell *matCellDef="let element"> {{element.puesto.id}} </td>
+      </ng-container>
+
+      
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> email </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="telefono">
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> telefono </th>
+        <td mat-cell *matCellDef="let element"> {{element.telefono}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="estado">
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> estado </th>
+        <td mat-cell *matCellDef="let element">  {{element.estado}} </td>
+      </ng-container>
+
+        
+      <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> email </th>
+        <td mat-cell *matCellDef="let element"> {{element.persona.nombre}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="apellido1">
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> apellido1 </th>
+        <td mat-cell *matCellDef="let element"> {{element.persona.apellido1}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="apellido2">
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> apellido2 </th>
+        <td mat-cell *matCellDef="let element">  {{element.persona.apellido2}} </td>
+      </ng-container>
+
+      
+      <ng-container matColumnDef="namePuesto">
+        <th mat-header-cell *matHeaderCellDef style="background-color: rgb(194, 246, 228);"> namePuesto </th>
+        <td mat-cell *matCellDef="let element">  {{element.puesto.namePuesto}} </td>
+      </ng-container>
+   
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+  </div>
+
